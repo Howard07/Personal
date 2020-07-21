@@ -1,21 +1,27 @@
 //bubble sort
 #include<iostream>
 #include<cmath>
-#include<cstdlib>
+
 using namespace std;
 //5 4 3 2 1
 int main(){
-int a[5]={},i;
-for(int k=1;k<=5;k++) cin>>a[k];
-for(i=1;i<=6;i++){
-	while((a[i]<a[i-1])){
-	int temp;  //4<5
-	temp=a[i];  // em =4
-	a[i]=a[i-1];  //  a1=5
-	a[i-1]=temp;    // a0=4
-	cout<<a[i-1]<<"  ";	
+int a[5]={5,4,3,2,1},i,temp;
+//for(int k=1;k<=5;k++) cin>>a[k];
+/*************
+54321
+43215
+32145
+21345
+12345
+*/
+for(int j=1;j<=4;j++)
+for(i=0;i<=3;i++){
+if( a[i] > a[i+1] )	{temp=a[i+1];  a[i+1]=a[i];  a[i]=temp;} 
+else continue;	
 }
+for(int k=0;k<=4;k++)
+cout<<a[k];
+return 0;
 }
-return 0;	}
 	
 
