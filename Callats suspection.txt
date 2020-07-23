@@ -1,0 +1,28 @@
+/*************************************************************************************
+#Callats Conjecture#
+Made by-----------Howard
+********************************************************************************** */
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+int num(int a){
+	if(a % 2 == 0) a /= 2;
+	else a = 3 * a + 1;
+	return num;
+}
+
+
+int main(){
+	int n,step=0;//n -> N;
+	cin>>n;
+	while(n != 1){
+		num (n);
+		step +=1;
+		cout<<"n = "<<n<<"step = "<<step<<endl;
+	}
+	cout<<step<<endl;
+	return 0;
+}
+
+
